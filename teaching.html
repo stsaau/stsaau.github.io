@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  a:link {
+    color: red;
+    text-decoration: none;
+  }
+
+  a:visited {
+  color: purple;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 75px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: rgb(176, 36, 25);
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: rgb(176, 36, 25);
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(176, 36, 25);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: rgb(176, 36, 25) !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: rgb(176, 36, 25);
+    color: white;
+    height: 175px;
+  }
+
+  .card-footer {
+    background: rgb(176, 36, 25);
+    color: white;
+    height: 250px;
+  }
+
+  .card-footer-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .carousel-inner img {
+      height: 550px;
+  }
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="200" >
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html">
+        <h2 style="color: white">Stefania Serafin</h2>
+        <p style="color: lightgrey">Professor, Aalborg University Copenhagen</p>
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#work">Recent Work</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="about" class="container-fluid">
+    <div  style="height: 200px; position: relative">
+      <h1 class="pagetitle">Teaching</h1>
+    </div>
+
+    <div>
+      <p>Below you find the courses I have been teaching since I moved to Denmark, connected to the Medialogy education and the Sound and Music Computing (SMC) education:</p>
+      <p>During the Spring 2018 I will teach a class called &#8220;Physical models for sound synthesis&#8221;, part of the SMC Master at Aalborg University.</p>
+      <p><strong>Fall 2014- ongoing</strong></p>
+      <p>Coordinator of the Master in <a href="http://media.aau.dk/smc">Sound and Music Computing</a></p>
+      <p>Teaching Sound Processing,  Modelling physical systems and multimodal perception and cognition, as well as supervising projects.</p>
+      <p><strong>Spring 2011 &#8211; ongoing </strong><br />
+      Multimodal interaction in virtual environments &#8211; PhD course</p>
+      <p>See material <a href="https://multimodalinteraction.wordpress.com/">here </a><br />
+      <strong></strong></p>
+      <p><strong>Fall 2009-ongoing</strong></p>
+      <p>Multimodal perception and cognition</p>
+      <p>Modelling physical systems<br />
+      Coordinator &#8211; Medialogy in Copenhagen</p>
+      <p><strong>Spring 2008</strong><br />
+      I am coordinating the semester 4: Interaction design, and teaching the courses below:</p>
+      <p><a href="http://www.media.aau.dk/~sts/ad"> Audio design </a><br />
+      Interactive acoustics</p>
+      <p><strong>Fall 2007</strong><br />
+      I am teaching <a href="http://www.media.aau.dk/~sts/cmp.html"> Cross-modal perception </a>.<br />
+      <strong>Spring 2007</strong></p>
+      <p>I am coordinating the semester 4: Interaction design, and teaching the courses below:</p>
+      <p><a href="http://www.media.aau.dk/~sts/ad"> Audio design </a><br />
+      Interactive acoustics</p>
+      <p><strong> Fall 2006 </strong></p>
+      <p>Auditory perception.</p>
+      <p>Cross-modal perception.</p>
+      <p><strong>Spring 2006<br />
+      </strong></p>
+      <p>During the Spring 2006, I am Semester coordinator of MED9 and MED4 (with Lise Kofoed).</p>
+      <p>I teach the following courses:</p>
+      <p><a href="http://www.imi.aau.dk/~sts/classes/ia06/"> Interactive acoustics </a></p>
+      <p><a href="http://www.imi.aau.dk/~sts/classes/ap06/ap2.html"> Automatic perception II sound </a></p>
+      <p><strong>FALL 2005<br />
+      </strong></p>
+      <p>During the fall 2005, I am Semester coordinator of MED9 (together with Salvatore Livatino) and MED3 (with Norbert Kruger).</p>
+      <p>I will also be involved in the following courses</p>
+      <p><a href="http://www.media.aau.dk/people/sts/ap05.html"> Automatic perception, sound part MED3</a></p>
+      <p><a href="http://www.media.aau.dk/people/sts/perception05.html">Perception, sound part MED3</a></p>
+      <p>Cross modal perception, sound part med7-2005</p>
+      <p>Cross sensorial processing, sound part med7-2005</p>
+      <p><strong>SPRING 2005<br />
+      </strong></p>
+      <p>I was semester coordinator of MED8.</p>
+      <p>I taught the following courses</p>
+      <p><a href="http://www.media.aau.dk/med8/html/ia.html">Interactive acoustics</a>, Medialogy 8</p>
+      <p><a href="http://www.media.aau.dk/ap2.html">Automatic perception, sound part, MED4 </a></p>
+      <p>I also taught a physical modeling class at ESMUC in Barcelona.</p>
+      <p>See material <a href="http://www.media.aau.dk/people/sts/pm.html">HERE</a></p>
+      <p><strong>FALL 2004 </strong></p>
+      <p>I was coordinating <a title="Medialogy M.S\&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;<br />
+      c." href="http://www.media.aau.dk/med7-2005/index.html">Med 7.</a></p>
+      <p>I was also teaching <a href="http://www.cs.aue.auc.dk/~sts/mi04.html"> Music informatics </a>.</p>
+      <p><strong>SPRING 2004 </strong></p>
+      <p><a href="http://www.imi.aau.dk/~sts/autoperception.html">Automatic perception</a></p>
+      <p><a href="http://www.imi.aau.dk/~sts/perception04.html"> Perception</a></p>
+      <p><a href="http://www.imi.aau.dk/~sts/math04.html"> Medialogy Math I</a></p>
+      <p><a href="http://www.imi.aau.dk/~sts/animations04.ppt">Soundtrack for animation,animation</a></p>
+      <p><strong>FALL 2003 </strong></p>
+      <p><a href="http://www.imi.aau.dk/~sts/class/musicinfo.html"> Music informatics</a></p>
+      <p><a href="http://www.imi.aau.dk/~sts/perception.html"> Perception</a></p>
+      <p>&nbsp;</p>
+      <p>Before moving to Denmark, here is some material of my classes at CCRMA, Stanford University</p>
+      <p><a href="http://www.imi.aau.dk/~sts/pidI2002.html">Physical interaction design for music I</a></p>
+      <p><a href="http://www.imi.aau.dk/~sts/pidII2002.html">Physical interaction design for music II</a></p>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+</body>
+</html>

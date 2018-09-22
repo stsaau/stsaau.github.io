@@ -19,20 +19,12 @@
   }
 
   a:link {
-    color: purple;
+    color: red;
     text-decoration: none;
   }
 
   a:visited {
-  color: red;
-  }
-
-  .jumbotron {
-    background-image: url(jumbo.jpg);
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    color: white;
-    min-height: 200px;
+  color: purple;
   }
 
   .headercontent {
@@ -44,7 +36,7 @@
 
 
   .panel-footer.panel-custom {
-    background: rgb(91, 76, 135);
+    background: rgb(176, 36, 25);
     color: white;
     text-align: center;
     padding-top: 25px;
@@ -59,12 +51,12 @@
 
   .navbar-default {
     font-family: Montserrat, sans-serif;
-    background-color: rgb(91, 76, 135);
+    background-color: rgb(176, 36, 25);
     letter-spacing: 2px;
   }
 
   .custom-toggler.navbar-toggler {
-    border-color: rgb(91, 76, 135);
+    border-color: rgb(176, 36, 25);
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -78,7 +70,7 @@
   }
 
   .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
-    color: rgb(91, 76, 135) !important;
+    color: rgb(176, 36, 25) !important;
     background-color: #fff !important;
   }
 
@@ -92,13 +84,13 @@
   }
 
   .card-header {
-    background: rgb(91, 76, 135);
+    background: rgb(176, 36, 25);
     color: white;
     height: 175px;
   }
 
   .card-footer {
-    background: rgb(91, 76, 135);
+    background: rgb(176, 36, 25);
     color: white;
     height: 250px;
   }
@@ -125,6 +117,10 @@
   transform: translate(-50%, -50%);
   }
 
+  .carousel-inner img {
+      height: 550px;
+  }
+
 </style>
 
 </head>
@@ -134,7 +130,8 @@
     <nav class="navbar navbar-expand-lg navbar-default fixed-top" >
 
       <a class="navbar-brand" href="index.html">
-        <img src="logo.png" alt="Logo" style="width:250px;">
+        <h2 style="color: white">Stefania Serafin</h2>
+        <p style="color: lightgrey">Professor, Aalborg University Copenhagen</p>
       </a>
 
       <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -143,306 +140,399 @@
 
       <div id="spy" class="navbar-collapse collapse">
           <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
             <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="#programme">Programme</a></li>
-            <li class="nav-item"><a class="nav-link" href="#network">Network</a></li>
-            <li class="nav-item"><a class="nav-link" href="#venues">Venues</a></li>
-            <li class="nav-item"><a class="nav-link" href="#info">Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work">Recent Work</a></li>
           </ul>
       </div>
     </nav>
-
-    <div class="container-fluid" style="padding: 0">
-      <div class="jumbotron">
-        <h3 class="headercontent">
-        Queens Festival
-        <br /><br />
-        Copenhagen
-        <br /><br />
-        May 13th-16th, 2019
-        </h3>
-      </div>
   </header>
 
 
-  <div class="container" style="height: 15px";>  </div>
+  <div class="container" style="height: 150px";>  </div>
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-lg-3 order-12 order-lg-1">
-        <div class="card text-center" >
-          <img class="card-img-top" src="img_2.jpg" alt="Card image" style="width:100%; max-height: 300px">
-          <div class="card-header">
-            <h3 class="card-title">What is EASTN?</h3>
-          </div>
-          <div class="card-body">
-            <p class="card-text">
-              The European Art - Science - Technology Network (EASTN) for Digital Creativity is a project that emerged from several European institutions involved in research, technology development, creation and education in the field of technologies applied to artistic creation. At European Level, this network is coordinated by <a href="http://www.acroe-ica.org/en">ACROE</a> (Grenoble, France) and supported by the Culture Program of the European Union since November 2017.
-            </p>
-          </div>
-      </div>
-    </div>
 
-      <div class="col-12 col-sm-6 col-lg-6 order-1 order-sm-1 order-lg-2">
+      <div class="col-sm-1">
+      </div>
+
+      <div class="col-sm-7">
         <div class="card" style="min-width: 300px">
-          <img class="card-img-top" src="smc_cover.png" alt="Card image" style="width:100%; max-height: 300px">
-          <div class="card-header">
-            <h3 class="card-title">Queens Festival</h3>
+          <div id="slide" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#slide" data-slide-to="0" class="active"></li>
+              <li data-target="#slide" data-slide-to="1"></li>
+              <li data-target="#slide" data-slide-to="2"></li>
+              <li data-target="#slide" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Slide_1.jpg" alt="Slide_1">
+                <div class="carousel-caption">
+                  <p>Sonic Interaction Design book launch in Zurich.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Slide_2.jpg" alt="Slide_2">
+                <div class="carousel-caption">
+                  <p>We won the 2015 edition of the 3DUI context</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Slide_3.jpg" alt="Slide_3">
+                <div class="carousel-caption">
+                  <p>The wavefield synthesis setup in the multisensory experience lab.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Slide_4.jpg" alt="Slide_4">
+                <div class="carousel-caption">
+                  <p>Presenting product sound design at Danish Sound days 2016</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#slide" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#slide" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
-          <div class="card-body">
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <a class="twitter-timeline" data-height="550" data-link-color="#E81C4F" href="https://twitter.com/stefasera?ref_src=twsrc%5Etfw">Tweets by stefasera</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-1">
+  </div>
+
+  <div id="about" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)">
+    <div  style="height: 200px; position: relative">
+      <h1 class="pagetitle">About me</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8 rounded" style="background: white">
+        <div class="row">
+          <div class="col-sm-5">
+            <img src="images/stefania.jpg" alt="Stefania" width=100% >
+          </div>
+          <div class="col-sm-7" >
+            <p style="font-size:14px">
+              I am Professor with special responsabilities in sound for multimodal environments in the <a href="http://www.media.aau.dk/">Medialogy</a> section at <a href="http://www.aau.dk/">Aalborg University</a> in Copenhagen.
+              <br>
+              I teach and research on sound models and sound design for interactive media and multimodal interfaces.
               <br /><br />
-              Nulla mollis augue erat, sit amet fringilla tellus accumsan a. Integer varius purus pulvinar fringilla ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              Before moving to Denmark, I got my PhD at <a href="http://ccrma.stanford.edu/">CCRMA, Stanford University.</a>
               <br /><br />
-              Sed fringilla, tortor vel porta consectetur, quam felis imperdiet eros, quis dictum ligula elit eu tellus. Nam dictum sit amet eros vel finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nulla risus, malesuada ac neque id, tempor varius ante. Proin luctus vulputate diam ac volutpat.
+              For more info, see <a href="http://vbn.aau.dk/da/persons/stefania-serafin(5dad027c-3254-4d8b-b162-f398057cdc27).html">here</a>
+              <br /><br />
+              You can contact me at <a href="mailto:sts@create.aau.dk">sts@create.aau.dk</a>
+              <br /><br />
+              A.C. Meyers Vaenge 15
+              <br>
+              2450 Copenhagen, SV
+              <br>
+              Denmark
             </p>
           </div>
         </div>
       </div>
-
-      <div class="col-12 col-sm-6 order-2 col-lg-3">
-        <div class="card" style="max-height:600px">
-          <a class="twitter-timeline" data-link-color="#981CEB" href="https://twitter.com/Novars_Research?ref_src=twsrc%5Etfw">Tweets by Novars_Research</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+      <div class="col-sm-2">
       </div>
     </div>
-  </div>
 
-  <div id="events" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
-    <div  style="height: 200px; position: relative">
-      <h1 class="pagetitle">Events</h1>
+    <div  style="height: 15px">
     </div>
-
 
     <div class="card-columns mx-auto" style="max-width:1000px">
       <div class="card text-center" >
-        <img class="card-img-top" src="Figura.jpg" alt="Card image" style="width:100%">
         <div class="card-header">
-          <h3 class="card-title">Figura Ensemble</h3>
+          <h3 class="card-title">Publications</h3>
         </div>
         <div class="card-body">
           <p class="card-text">
-            A mezzo-soprano, three musicians, a composer, a poet and an architect – FIGURA Ensemble is a musical collective with a mind of its own.
-            <br /><br />
-            Each of the seven artists of FIGURA are among Denmark’s most respected – Helene Gjerris, Jesper Egelund, Frans Hansen, Anna Klett, Peter Bruun, Filippa Berglund and Ursula Andkjær Olsen.
-            <br /><br />
-            Together, over the last 24 years, FIGURA has challenged both collaborators and audiences alike with exceptional concerts and modern music theatre – not to mention their ‘Small Composers’ workshops that reach out to the coming generation of music-lovers.
-          </p>
-        </div>
-        <div class="card-footer">
-          <p class="card-footer-text">
-            <b>Location:</b> <br> Aalborg University Copenhagen campus
-            <br /><br />
-            <b>Time:</b> <br> 13th of May at 18:00
+            An updated list of my publications can be found <a href="http://vbn.aau.dk/en/persons/stefania-serafin(5dad027c-3254-4d8b-b162-f398057cdc27)/publications.html">here.</a>
           </p>
         </div>
       </div>
 
-
-    <div class="card text-center" >
-      <img class="card-img-top" src="Small.jpg" alt="Card image" style="width:100%">
-      <div class="card-header">
-        <h3 class="card-title">Small composers</h3>
-      </div>
-      <div class="card-body">
-        <p class="card-text">
-          In ‘Small Composers’ children in age group 1st-5th grade are invited to delve into the world of classical music and its composers. Students participate in playful musical expression and becomes a part of simple rhythmic and melodic figures. They use body, voice and available sound sources in the creative musical work and produce sound illustrations and sound scenery of their own stories. They listen attentively to short pieces of music. They get the opportunity to experience and evaluate artistic quality.
-        </p>
-      </div>
-      <div class="card-footer">
-        <p class="card-footer-text">
-          <b>Location:</b> <br> Aalborg University Copenhagen campus
-          <br /><br />
-          <b>Time:</b> <br> 12th of May at 11:00
-        </p>
-      </div>
-    </div>
-
-    <div class="card text-center" >
-      <img class="card-img-top" src="theremin.jpg" alt="Card image" style="width:100%">
-      <div class="card-header">
-        <h3 class="card-title">Kid Cool Theremin School</h3>
-      </div>
-      <div class="card-body">
-        <p class="card-text">
-          Kid Cool Theremin School is dedicated to inspire and nurture creative learning and expression through innovative music education, art and science. As part of the music and education department of Pioneer Works Center for Arts and Innovation, NY and the NY Theremin Society, the Kid Cool Theremin School nurtures an environment devoted to creative discourse and collaboration for children and parents alike, and is working towards participation rather than being passive spectators through a deep integration of the arts. Without pre consisting playing techniques and the primal and unusual way of how a theremin is being played, it enhances autonomous and creative thinking and opens up a new universe of expression for parents and children alike.
-        </p>
-      </div>
-      <div class="card-footer">
-        <p class="card-footer-text">
-          <b>Location:</b> <br> Aalborg University Copenhagen campus
-          <br /><br />
-          <b>Time:</b> <br> 15th of May
-        </p>
-      </div>
-    </div>
-
-    <div class="card text-center" >
-      <img class="card-img-top" src="Chrysler.jpg" alt="Card image" style="width:100%">
-      <div class="card-header">
-        <h3 class="card-title">Dorit Chrysler Theremin Concert</h3>
-      </div>
-      <div class="card-body">
-        <p class="card-text">
-          Dorit Chrysler has been dubbed a superior wizard of the theremin. An Austrian-born, New York based composer and sound artist, Chrysler is the co-founder of the New York Theremin Society and founder of the first school of theremin, KidCoolThereminSchool. As much as the theremin is a tool in Chrysler’s electronic instrument arsenal, she's also one the most visible thereminists spreading the gospel of this mysterious sounding instrument, which is basically played by massaging thin air.
-        </p>
-      </div>
-      <div class="card-footer">
-        <p class="card-footer-text">
-          <b>Location:</b> <br> Aalborg University Copenhagen campus
-          <br /><br />
-          <b>Time:</b> <br> 13th of May at 17:00
-        </p>
-      </div>
-    </div>
-
-    <div class="card text-center" >
-      <img class="card-img-top" src="Queen.jpg" alt="Card image" style="width:100%">
-      <div class="card-header">
-        <h3 class="card-title">Black Queen Opera</h3>
-      </div>
-      <div class="card-body">
-        <p class="card-text">
-          The Black Queen is a theatrical experience employing the tools of technology, classical music, folk melodies, contemporary poetry, and historical exploration to tell the story of Barbora of Celje, Queen of the Holy Roman Empire in the early 1400’s. She was a shrewd businesswoman and a compassionate guardian of justice. In partnership with a trusting and loving husband, King Sigismund of Luxembourg, she became the most powerful queen of her time. As Sigismund was dying, a rumor campaign was created to destroy her reputation and rob her of her powers. Even the pope helped in spreading stories of her as a heretic, a whore, and a witch. When her husband died, she was arrested and exiled. After her death she lived on only as an evil myth, The Black Queen. This project is designed to resurrect her as the badass she truly was.
-        </p>
-      </div>
-      <div class="card-footer">
-        <p class="card-footer-text">
-          <b>Location:</b> <br> Frederiksholm Kirke
-          <br /><br />
-          <b>Time:</b> <br> 14th and 15th of May at 20:00
-        </p>
-      </div>
-    </div>
-
-    <div class="card text-center" >
-      <img class="card-img-top" src="Jewellery.jpg" alt="Card image" style="width:100%">
-      <div class="card-header">
-        <h3 class="card-title">Jewellery workshop</h3>
-      </div>
-      <div class="card-body">
-        <p class="card-text">
-          Description and details will follow.
-        </p>
-      </div>
-      <div class="card-footer">
-        <p class="card-footer-text">
-          <b>Location:</b> <br> Aalborg University Copenhagen campus
-          <br /><br />
-          <b>Time:</b> <br> 13th of May at 10:00
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="container" style="background:rgb(91, 76, 135); height: 100px; width: 450px">
-    <a href="#">
-      <div class="row">
-        <div class="col-2"><img src="tickets.png" alt="tickets" style="height:100px"></div>
-        <div class="col-10">
-          <p class="text-center" style="line-height: 100px; color: white; font-size: 25px"><b>GET TICKETS</b></p>
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
-
-
-
-  <div id="programme" class="container-fluid" style="min-height: 100px">
-    <div  style="height: 200px; position: relative">
-      <h1 class="pagetitle">Programme</h1>
-    </div>
-
-    <div class="card-columns mx-auto" style="max-width:1000px">
       <div class="card text-center" >
-        <a href="roadmap.html#scenarios">
-          <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
-          <div class="card-header">
-            <h3 class="card-title">The programme</h3>
-          </div>
-        </a>
-        <div class="card-body">
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
-          </p>
-        </div>
-        <a href="roadmap.html#scenarios" style="background: #1B6884; color: white">
-          <div class="card-footer">
-            <p class="card-footer-text">More</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div id="network" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
-    <div  style="height: 200px; position: relative">
-      <h1 class="pagetitle">Network</h1>
-    </div>
-
-    <div class="card-columns mx-auto" style="max-width:1000px">
-      <div class="card text-center" >
-        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
         <div class="card-header">
-          <h3 class="card-title">Associations</h3>
+          <h3 class="card-title">Research</h3>
         </div>
         <div class="card-body">
           <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+            My research interests are: sonic interaction design, sound for virtual and augmented reality, audio-haptic interaction, sound synthesis by physical models, multimodal interfaces, multimodal perception and cognition, virtual and augmented reality.
             <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+            My Phd dissertation defended in 2004 at <a href="http://www.imi.aau.dk/~sts/www-ccrma.stanford.edu">CCRMA, Stanford University</a> was entitled:
+            The sound of friction: real-time models, playability and musical applications.
+            <br /><br />
+            <a href="http://vbn.aau.dk/da/persons/stefania-serafin(5dad027c-3254-4d8b-b162-f398057cdc27)/publications.html">Here</a> you can find my publications.
           </p>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div id="venues" class="container-fluid" style="min-height: 100px";>
-    <div  style="height: 200px; position: relative">
-      <h1 class="pagetitle">Venues</h1>
-    </div>
-
-    <div class="card-columns mx-auto" style="max-width:1000px">
       <div class="card text-center" >
-        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <img class="card-img-top" src="images/melab.jpg" alt="Card image" style="width:100%">
         <div class="card-header">
-          <h3 class="card-title">COSMO RODEWALD CONCERT HALL</h3>
+          <h3 class="card-title">MEL lab</h3>
         </div>
         <div class="card-body">
           <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+            Together with Rolf Nordahl I run the <a href="https://melcph.create.aau.dk/">Multisensory Experience Lab</a> at Aalborg University in Copenhagen. Check the link to find out about our activities.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <div class="card-header">
+          <h3 class="card-title">Teaching</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            During the Spring 2018 I will teach a class called “Physical models for sound synthesis”, part of the SMC Master at Aalborg University.
             <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+            See a full list of classes I have tought: <a href="teaching.html">here.</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="events" class="container-fluid" style="min-height: 100px; background">
+    <div  style="height: 200px; position: relative">
+      <h1 class="pagetitle">Events we have organized</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/sive.png" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">IEEE VR Workshop SIVE</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            IEEE VR Workshop on Sonic Interaction for Virtual Environments (SIVE) in <a href="https://sive.create.aau.dk/index.php/sive-2014/">2014</a>, <a href="https://sive.create.aau.dk/index.php/sive-2015/">2015</a>, <a href="https://sive.create.aau.dk/index.php/sive-2017/">2017</a> and <a href="https://sive.create.aau.dk/index.php/sive-2018/">2018</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/nime.png" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">NIME 2017</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <a href="http://www.nime2017.org/">New Interfaces for Musical Expression (NIME) 2017</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/smc.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">SMC 2012</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <a href="http://smc2012.smcnetwork.org/">Sound and Music Computing (SMC) 2012</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/haid.png" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">HAID 2010</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <a href="http://media.aau.dk/haid10/">Haptic-Audio Interaction Design (HAID) 2010</a>
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="info" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)">
+  <div id="work" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
     <div  style="height: 200px; position: relative">
-      <h1 class="pagetitle">Info</h1>
+      <h1 class="pagetitle">Recent Work</h1>
     </div>
+
 
     <div class="card-columns mx-auto" style="max-width:1000px">
       <div class="card text-center" >
-        <a href="roadmap.html#scenarios">
-          <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
-          <div class="card-header">
-            <h3 class="card-title">Videos</h3>
-          </div>
-        </a>
+        <img class="card-img-top" src="images/lesile.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Simulating the Leslie</h3>
+        </div>
         <div class="card-body">
           <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+            The Leslie is an audio processor used with electronic organs and other instruments. <br>Together with Julius Smith, Jonathan Abel and David Berners, we built a digital simulation of the Leslie horn and cabinet.
+            <br /><br />
+            See more info <a href="http://ccrma.stanford.edu/~jos/doppler/">here.</a>
           </p>
         </div>
-        <a href="roadmap.html#scenarios" style="background: #1B6884; color: white">
-          <div class="card-footer">
-            <p class="card-footer-text">More</p>
-          </div>
-        </a>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/me.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Sound for VR and AR</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            In the <a href="http://imi.aau.dk/~sts/melcph.create.aau.dk">multisensory experience lab</a> we have been running several projects on simulating sonic experience in Virtual and / or augmented reality. Some of the research is featured in the IEEE series of <a href="https://sive.create.aau.dk/">SIVE</a> (Sonic Interactions for Virtual Environments) workshops.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/sid_logo.png" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Sound for VR and AR</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Sonic Interaction Design is the exploitation of sound as one of the principal channels conveying information, meaning, and aesthetic/emotional qualities in interactive contexts. The Action proactively contributes to the creation and consolidation of new design theories, tools, and practices in this innovative and interdisciplinary domain. While being advanced through a few sparse projects, this field relies on the COST  SID Action to strengthen the links between scientists, artists, and designers in the European Research Area. The COST  SID platform stands on four legs: (i) perception, cognition, and emotion; (ii) design; (iii) interactive art; (iv) information display and exploration. These are each supported by the research and development of the requisite new interactive technologies. Due to the breadth of its application spectrum, the COST SID Action has the potential of affecting everyday life through physical and virtual interactive objects, as today there is the possibility to design and actively control their acoustic response so that it conveys an intended aesthetic, informational, or emotional content.
+            <br>
+            More info <a href="http://sid.soundobject.org/">here</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/rhythmic_walking.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Rhytmic sonic interactions</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            One important rhythmic activity is walking. Walking plays an important part in our daily lives. In addition to being a natural means of transportation, walking is also characterized by the resulting sound, which can provide information about the surface, type of shoe, and movement speed as well as the person’s age, weight, and physical condition.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/haptic.png" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Audio-haptic interaction</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            We are investigating the use of physically simulated audio-haptic feedback for different tasks.
+            <br>
+            For example, we are investigating whether providing auditory and haptic feedback helps the task of balancing on a balance board. More info here: <a href="http://vbn.aau.dk/ws/files/68356008/Nilsson_Serafin_Nordahl_The_Fwobble_continuous_audio_haptic_feedback_for_balance.pdf">The Fwobble.</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/tubes.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Simulating singing tubes</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            I developed a physical model of a rotating corrugated tube. The model has been used in the piece Garden of the Dragon by Juraj Kojs. We have been performing the piece in several locations around the world, such as the Digitalis Festival at UVA (2003), the Sofia Ensemble concert in Venice (may 2003), the CMMR conference in Denmark (may 2004), and at ICMC 2004 in Miami.
+            <br /><br />
+            Check out a paper on <a href="http://journals.cambridge.org/action/displayIssue?jid=OSO&volumeId=10&issueId=01">Organised Sound</a> about the tube.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/tubes.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">The Croaker</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The Intonarumori were a family of musical instruments invented by the Italian Futurist composer and painter Luigi Russolo.
+            <br>
+            Using hardware and software technologies, I reproduced several intonarumori instruments.
+            <br>
+            You can read more about it in this paper: <a href="http://dl.acm.org/citation.cfm?id=1142275">Synthesis and control of everyday sounds reconstructing Russolo’s Intonarumori</a> Proceedings New Interfaces for Musical Expression, NIME 2013.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/filtergraph.gif" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Max/MSP externals</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            I designed several external objects for Max/MSP such as filtergraph~ (together with Richard Dudas) and different physical models.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/instruments6.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">The sound of friction</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            As part of my PhD dissertation at CCRMA, Stanford University, I developed several physical models of unusual friction driven instruments such as a musical saw, Tibetan singing bowls, rubbed wineglasses and bowed cymbals.
+            <br /><br />
+            You can read about them in the dissertation "The sound of friction: real-time models, playability and musical applications" that can be downloaded here: <a href="http://imi.aau.dk/~sts/serafinthesis.pdf">The sound of friction.</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/dreamInterface.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Digital Re-working/re-appropriation of ElectroAcoustic Music (EU project)</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The aim of the DREAM project is to create a permanent installation at the Milan Museum of musical instruments, consisting of a SW-HW system that re-creates the electronic lutherie of the Studio di Fonologia Musicale (RAI, Milan, Italy): in particular the production setup that were originally used to compose the Pousseur’s composition Scambi will be considered. This work will allow musicians from all over Europe to experience the re-appropriation of both Pousseur’s composition and of the ancient analog technology that were used at that time through the virtual lutherie produced by the project. At the same time the installation will be the occasion for scholars to think about open compositions understanding by direct manipulation in this specific creative process. Furthermore they will learn a very important piece of history of modern Music: the birth of electronic music and its connection with the most important radiophonic european institutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/niw_logo.gif" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Natural Interactive Walking (NIW)</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The Natural Interactive Walking project (NIW) proceeds from the hypothesis that walking, by enabling rich interactions with floor surfaces, consistently conveys enactive information that manifests itself predominantly through haptic and auditory cues. Vision will be regarded as playing an integrative role linking locomotion to obstacle avoidance, navigation, balance, and the understanding of details occurring at ground level. The ecological information we obtain from interaction with ground surfaces allows us to navigate and orient during everyday tasks in unfamiliar environments, by means of the invariant ecological meaning that we have learned through prior experience with walking tasks.
+            <br /><br />
+            See a video demonstration <a href="https://vimeo.com/36474961">here.</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="images/physmism1.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">The Physmism</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The physmism is the result of the Master thesis of Steven Gelineck and Niels Boettcher.
+            <br /><br />
+            In this project a physical interface was created to explore the possibilities for improving the creative use of physical modelling sound synthesis. A set of possible factors for improving the creative use of physical modelling were proposed and a novel interface for controlling physical models, the PHYSMISM, was designed and implemented. The PHYSMISM was implemented in a software and hardware version. Moreover, four different physical modelling techniques were implemented, to explore the implications of using such techniques.
+          </p>
+        </div>
       </div>
     </div>
   </div>
