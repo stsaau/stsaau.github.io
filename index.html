@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  a:link {
+    color: purple;
+    text-decoration: none;
+  }
+
+  a:visited {
+  color: red;
+  }
+
+  .jumbotron {
+    background-image: url(jumbo.jpg);
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    color: white;
+    min-height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 75px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: rgb(91, 76, 135);
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: rgb(91, 76, 135);
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(91, 76, 135);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: rgb(91, 76, 135) !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: rgb(91, 76, 135);
+    color: white;
+    height: 175px;
+  }
+
+  .card-footer {
+    background: rgb(91, 76, 135);
+    color: white;
+    height: 250px;
+  }
+
+  .card-footer-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="200" >
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Logo" style="width:250px;">
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#programme">Programme</a></li>
+            <li class="nav-item"><a class="nav-link" href="#network">Network</a></li>
+            <li class="nav-item"><a class="nav-link" href="#venues">Venues</a></li>
+            <li class="nav-item"><a class="nav-link" href="#info">Info</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Queens Festival
+        <br /><br />
+        Copenhagen
+        <br /><br />
+        May 13th-16th, 2019
+        </h3>
+      </div>
+  </header>
+
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-3 order-12 order-lg-1">
+        <div class="card text-center" >
+          <img class="card-img-top" src="img_2.jpg" alt="Card image" style="width:100%; max-height: 300px">
+          <div class="card-header">
+            <h3 class="card-title">What is EASTN?</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              The European Art - Science - Technology Network (EASTN) for Digital Creativity is a project that emerged from several European institutions involved in research, technology development, creation and education in the field of technologies applied to artistic creation. At European Level, this network is coordinated by <a href="http://www.acroe-ica.org/en">ACROE</a> (Grenoble, France) and supported by the Culture Program of the European Union since November 2017.
+            </p>
+          </div>
+      </div>
+    </div>
+
+      <div class="col-12 col-sm-6 col-lg-6 order-1 order-sm-1 order-lg-2">
+        <div class="card" style="min-width: 300px">
+          <img class="card-img-top" src="smc_cover.png" alt="Card image" style="width:100%; max-height: 300px">
+          <div class="card-header">
+            <h3 class="card-title">Queens Festival</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+              <br /><br />
+              Nulla mollis augue erat, sit amet fringilla tellus accumsan a. Integer varius purus pulvinar fringilla ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              <br /><br />
+              Sed fringilla, tortor vel porta consectetur, quam felis imperdiet eros, quis dictum ligula elit eu tellus. Nam dictum sit amet eros vel finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nulla risus, malesuada ac neque id, tempor varius ante. Proin luctus vulputate diam ac volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 order-2 col-lg-3">
+        <div class="card" style="max-height:600px">
+          <a class="twitter-timeline" data-link-color="#981CEB" href="https://twitter.com/Novars_Research?ref_src=twsrc%5Etfw">Tweets by Novars_Research</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="events" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 200px; position: relative">
+      <h1 class="pagetitle">Events</h1>
+    </div>
+
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="Figura.jpg" alt="Card image" style="width:100%">
+        <div class="card-header">
+          <h3 class="card-title">Figura Ensemble</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            A mezzo-soprano, three musicians, a composer, a poet and an architect – FIGURA Ensemble is a musical collective with a mind of its own.
+            <br /><br />
+            Each of the seven artists of FIGURA are among Denmark’s most respected – Helene Gjerris, Jesper Egelund, Frans Hansen, Anna Klett, Peter Bruun, Filippa Berglund and Ursula Andkjær Olsen.
+            <br /><br />
+            Together, over the last 24 years, FIGURA has challenged both collaborators and audiences alike with exceptional concerts and modern music theatre – not to mention their ‘Small Composers’ workshops that reach out to the coming generation of music-lovers.
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-footer-text">
+            <b>Location:</b> <br> Aalborg University Copenhagen campus
+            <br /><br />
+            <b>Time:</b> <br> 13th of May at 18:00
+          </p>
+        </div>
+      </div>
+
+
+    <div class="card text-center" >
+      <img class="card-img-top" src="Small.jpg" alt="Card image" style="width:100%">
+      <div class="card-header">
+        <h3 class="card-title">Small composers</h3>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          In ‘Small Composers’ children in age group 1st-5th grade are invited to delve into the world of classical music and its composers. Students participate in playful musical expression and becomes a part of simple rhythmic and melodic figures. They use body, voice and available sound sources in the creative musical work and produce sound illustrations and sound scenery of their own stories. They listen attentively to short pieces of music. They get the opportunity to experience and evaluate artistic quality.
+        </p>
+      </div>
+      <div class="card-footer">
+        <p class="card-footer-text">
+          <b>Location:</b> <br> Aalborg University Copenhagen campus
+          <br /><br />
+          <b>Time:</b> <br> 12th of May at 11:00
+        </p>
+      </div>
+    </div>
+
+    <div class="card text-center" >
+      <img class="card-img-top" src="theremin.jpg" alt="Card image" style="width:100%">
+      <div class="card-header">
+        <h3 class="card-title">Kid Cool Theremin School</h3>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Kid Cool Theremin School is dedicated to inspire and nurture creative learning and expression through innovative music education, art and science. As part of the music and education department of Pioneer Works Center for Arts and Innovation, NY and the NY Theremin Society, the Kid Cool Theremin School nurtures an environment devoted to creative discourse and collaboration for children and parents alike, and is working towards participation rather than being passive spectators through a deep integration of the arts. Without pre consisting playing techniques and the primal and unusual way of how a theremin is being played, it enhances autonomous and creative thinking and opens up a new universe of expression for parents and children alike.
+        </p>
+      </div>
+      <div class="card-footer">
+        <p class="card-footer-text">
+          <b>Location:</b> <br> Aalborg University Copenhagen campus
+          <br /><br />
+          <b>Time:</b> <br> 15th of May
+        </p>
+      </div>
+    </div>
+
+    <div class="card text-center" >
+      <img class="card-img-top" src="Chrysler.jpg" alt="Card image" style="width:100%">
+      <div class="card-header">
+        <h3 class="card-title">Dorit Chrysler Theremin Concert</h3>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Dorit Chrysler has been dubbed a superior wizard of the theremin. An Austrian-born, New York based composer and sound artist, Chrysler is the co-founder of the New York Theremin Society and founder of the first school of theremin, KidCoolThereminSchool. As much as the theremin is a tool in Chrysler’s electronic instrument arsenal, she's also one the most visible thereminists spreading the gospel of this mysterious sounding instrument, which is basically played by massaging thin air.
+        </p>
+      </div>
+      <div class="card-footer">
+        <p class="card-footer-text">
+          <b>Location:</b> <br> Aalborg University Copenhagen campus
+          <br /><br />
+          <b>Time:</b> <br> 13th of May at 17:00
+        </p>
+      </div>
+    </div>
+
+    <div class="card text-center" >
+      <img class="card-img-top" src="Queen.jpg" alt="Card image" style="width:100%">
+      <div class="card-header">
+        <h3 class="card-title">Black Queen Opera</h3>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          The Black Queen is a theatrical experience employing the tools of technology, classical music, folk melodies, contemporary poetry, and historical exploration to tell the story of Barbora of Celje, Queen of the Holy Roman Empire in the early 1400’s. She was a shrewd businesswoman and a compassionate guardian of justice. In partnership with a trusting and loving husband, King Sigismund of Luxembourg, she became the most powerful queen of her time. As Sigismund was dying, a rumor campaign was created to destroy her reputation and rob her of her powers. Even the pope helped in spreading stories of her as a heretic, a whore, and a witch. When her husband died, she was arrested and exiled. After her death she lived on only as an evil myth, The Black Queen. This project is designed to resurrect her as the badass she truly was.
+        </p>
+      </div>
+      <div class="card-footer">
+        <p class="card-footer-text">
+          <b>Location:</b> <br> Frederiksholm Kirke
+          <br /><br />
+          <b>Time:</b> <br> 14th and 15th of May at 20:00
+        </p>
+      </div>
+    </div>
+
+    <div class="card text-center" >
+      <img class="card-img-top" src="Jewellery.jpg" alt="Card image" style="width:100%">
+      <div class="card-header">
+        <h3 class="card-title">Jewellery workshop</h3>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Description and details will follow.
+        </p>
+      </div>
+      <div class="card-footer">
+        <p class="card-footer-text">
+          <b>Location:</b> <br> Aalborg University Copenhagen campus
+          <br /><br />
+          <b>Time:</b> <br> 13th of May at 10:00
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="background:rgb(91, 76, 135); height: 100px; width: 450px">
+    <a href="#">
+      <div class="row">
+        <div class="col-2"><img src="tickets.png" alt="tickets" style="height:100px"></div>
+        <div class="col-10">
+          <p class="text-center" style="line-height: 100px; color: white; font-size: 25px"><b>GET TICKETS</b></p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+
+  <div id="programme" class="container-fluid" style="min-height: 100px">
+    <div  style="height: 200px; position: relative">
+      <h1 class="pagetitle">Programme</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <a href="roadmap.html#scenarios">
+          <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
+          <div class="card-header">
+            <h3 class="card-title">The programme</h3>
+          </div>
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+          </p>
+        </div>
+        <a href="roadmap.html#scenarios" style="background: #1B6884; color: white">
+          <div class="card-footer">
+            <p class="card-footer-text">More</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="network" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 200px; position: relative">
+      <h1 class="pagetitle">Network</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Associations</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+            <br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="venues" class="container-fluid" style="min-height: 100px";>
+    <div  style="height: 200px; position: relative">
+      <h1 class="pagetitle">Venues</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">COSMO RODEWALD CONCERT HALL</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+            <br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="info" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)">
+    <div  style="height: 200px; position: relative">
+      <h1 class="pagetitle">Info</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <a href="roadmap.html#scenarios">
+          <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
+          <div class="card-header">
+            <h3 class="card-title">Videos</h3>
+          </div>
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
+          </p>
+        </div>
+        <a href="roadmap.html#scenarios" style="background: #1B6884; color: white">
+          <div class="card-footer">
+            <p class="card-footer-text">More</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+</body>
+</html>
